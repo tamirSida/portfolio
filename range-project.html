@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Management System - Tamir Sida</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Tamir Sida</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#talks">Talks</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="index.html#projects">Projects</a> / <span>Range Management System</span>
+            </div>
+            <h1>Shooting Range Management System</h1>
+            <div class="project-meta">
+                <div class="project-client">
+                    <strong>Client:</strong> Central Command, IDF
+                </div>
+                <div class="project-type">
+                    <strong>Type:</strong> Internal Defense-Tech Web App
+                </div>
+                <div class="project-stack">
+                    <strong>Stack:</strong> React, Firebase, Firestore, TailwindCSS
+                </div>
+                <div class="project-status">
+                    <strong>Status:</strong> <span class="status-active">Operational Deployment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <p class="project-description">
+                A tactical, real-time scheduling and management platform for live-fire shooting ranges, developed for Central Command in the IDF. The system provides full control room capabilities including range state monitoring, dynamic unit scheduling, usage analytics, and data visualization for operational insights.
+            </p>
+            <div class="security-notice">
+                <i class="fas fa-shield-alt"></i>
+                <p>Due to the nature of the project, the full source code is available only upon request under NDA.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Real-time Dashboard</h3>
+                    <p>Live monitoring of range statuses (Hot / Cold / Pending) with instant updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Dynamic Data Aggregation</h3>
+                    <p>Automatic data collection by unit, time, and usage frequency for command insights.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Range Request System</h3>
+                    <p>Secure request and approval workflow with notifications and status tracking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Role-based Access</h3>
+                    <p>Customized views and permissions for Admin, Commanders, and Unit Managers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Visual Analytics</h3>
+                    <p>Interactive dashboard with charts and activity breakdown for data-driven decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="project-gallery">
+        <div class="container">
+            <h2 class="section-title">Screenshots</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/ranges/controlpanel.jpg" alt="Control Room Dashboard">
+                    <div class="gallery-caption">Control Room Dashboard</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ranges/controlroom-live range state.jpg" alt="Live Range Status View">
+                    <div class="gallery-caption">Live Range Status View</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ranges/rangeform.jpg" alt="Range Request Form">
+                    <div class="gallery-caption">Range Request Form</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ranges/login.jpg" alt="Secure Login Interface">
+                    <div class="gallery-caption">Secure Login Interface</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ranges/control room - sumarizse data.jpg" alt="Summary Dashboard">
+                    <div class="gallery-caption">Summary Dashboard</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ranges/mock data summary.jpg" alt="Data Visualization">
+                    <div class="gallery-caption">Data Visualization</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details -->
+    <section class="project-technical">
+        <div class="container">
+            <h2 class="section-title">Technical Implementation</h2>
+            <div class="tech-details">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React for component-based UI architecture</li>
+                        <li>TailwindCSS for custom responsive design</li>
+                        <li>Chart.js for interactive data visualizations</li>
+                        <li>React Router for multi-view navigation</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Firebase Authentication for secure multi-tier access</li>
+                        <li>Firestore for real-time data and state management</li>
+                        <li>Cloud Functions for request processing and notifications</li>
+                        <li>Custom API integrations with military systems</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Security Features</h3>
+                    <ul>
+                        <li>Role-based access control with granular permissions</li>
+                        <li>Secure data transmission with encryption</li>
+                        <li>Audit logging for all critical operations</li>
+                        <li>Session management with automatic timeouts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Challenges -->
+    <section class="project-challenges">
+        <div class="container">
+            <h2 class="section-title">Challenges & Solutions</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <h3>Real-time Synchronization</h3>
+                    <p class="challenge">Multiple control points needed access to live range status data with instant updates across secure networks.</p>
+                    <p class="solution"><strong>Solution:</strong> Implemented Firebase's real-time database with optimized listeners and fallback mechanisms for connectivity issues.</p>
+                </div>
+                <div class="challenge-card">
+                    <h3>Complex Access Control</h3>
+                    <p class="challenge">Different user roles required highly specific permissions based on unit, rank, and facilities.</p>
+                    <p class="solution"><strong>Solution:</strong> Built a custom RBAC system with hierarchical permission inheritance and context-aware access rules.</p>
+                </div>
+                <div class="challenge-card">
+                    <h3>Legacy System Integration</h3>
+                    <p class="challenge">Needed to connect with existing military scheduling systems without disrupting operations.</p>
+                    <p class="solution"><strong>Solution:</strong> Developed adapters and middleware services to bridge modern web app with legacy infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Links -->
+    <section class="project-navigation">
+        <div class="container">
+            <a href="index.html#projects" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <a href="index.html#contact" class="btn btn-primary">
+                Contact Me <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Tamir Sida. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
