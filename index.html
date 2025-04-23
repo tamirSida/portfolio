@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamir Sida | Defense Tech & AI Leadership</title>
-    <meta name="description" content="Professional portfolio of Tamir Sida - Project Manager, AI Lecturer, and Full-Stack Developer with expertise in defense technology and AI systems.">
+    <title>Tamir Sida | CS Student & Developer</title>
+    <meta name="description" content="Portfolio of Tamir Sida - Computer Science Student, Full-Stack Developer with expertise in defense technology and AI systems.">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
 <body>
     <!-- Navigation -->
@@ -19,8 +25,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#talks">Talks</a></li>
+                <li><a href="#clients">Organizations</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -34,9 +39,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="tech-particles" id="particles-js"></div>
-        <div class="container">
-            <h1>Building tech that empowers <span class="gradient-text">defense, education, and innovation.</span></h1>
-            <p>Project Manager | AI Lecturer | Full-Stack Developer</p>
+        <div class="container" style="text-align: center; width: 100%; display: flex; flex-direction: column; align-items: center;">
+            <h1>Building tech that empowers <span class="gradient-text">defense, education, and innovation</span></h1>
+            <p>Computer Science Student | Developer | AI Enthusiast</p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
                 <a href="#contact" class="btn btn-outline">Contact Me</a>
@@ -50,15 +55,15 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
+        <div class="container" style="text-align: center;">
+            <div class="section-header" style="width: 100%;">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Strategic leadership meets technical execution</p>
+                <p class="section-subtitle">Computer Science & Entrepreneurship</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm currently leading classified AI training systems at Israel Aerospace Industries (IAI), while freelancing on mission-critical web applications for Central Command (IDF) and Version Bravo. I also lecture on AI usage and prompt engineering, and serve as the Community & Infrastructure Lead for Version Bravo.</p>
-                    <p>My background combines tactical leadership in Maglan and Paratroopers, software engineering (Java, Python, React, Firebase), AI systems and prompt design, and product & project management in defense and education.</p>
+                    <p>Computer Science student at Reichman University (IRIS - studies in English) pursuing a double major in Entrepreneurship (B.A) and Computer Science (B.Sc), enrolled in the honors programs of both schools. I combine native English proficiency with technical expertise in AI, digital systems, and product innovation.</p>
+                    <p>I have experience in developing mission-critical systems, including real-time management platforms and AI-based data processing tools. My CS studies focus on data structures, algorithms, and systems engineering.</p>
                 </div>
                 <div class="skills glass-card">
                     <h3 class="skills-title">Technical Expertise</h3>
@@ -67,30 +72,31 @@
                             <h4>Frontend</h4>
                             <div class="skill-items">
                                 <span>React</span>
-                                <span>TailwindCSS</span>
                                 <span>HTML/CSS</span>
+                                <span>UX Design</span>
                             </div>
                         </div>
                         <div class="skill-category">
                             <h4>Backend/DB</h4>
                             <div class="skill-items">
                                 <span>Firebase</span>
-                                <span>Firestore</span>
-                                <span>Node.js</span>
+                                <span>Java</span>
+                                <span>Python</span>
                             </div>
                         </div>
                         <div class="skill-category">
-                            <h4>DevOps</h4>
+                            <h4>Development</h4>
                             <div class="skill-items">
-                                <span>GitHub Actions</span>
-                                <span>GitHub Pages</span>
+                                <span>Linux</span>
+                                <span>Git</span>
+                                <span>Algorithms</span>
                             </div>
                         </div>
                         <div class="skill-category">
                             <h4>AI/ML</h4>
                             <div class="skill-items">
-                                <span>GPT API integrations</span>
-                                <span>Prompt engineering</span>
+                                <span>Prompt Engineering</span>
+                                <span>Data Analytics</span>
                             </div>
                         </div>
                     </div>
@@ -101,16 +107,16 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
+        <div class="container" style="text-align: center;">
+            <div class="section-header" style="width: 100%;">
                 <h2 class="section-title">Project Highlights</h2>
                 <p class="section-subtitle">Mission-critical applications with purpose</p>
             </div>
             <div class="project-cards">
                 <!-- Central Command - Range Management System -->
-                <a href="range-project.html" class="project-card float-animation">
+                <a href="range-management.html" class="project-card card-3d-effect">
                     <div class="project-image">
-                        <img src="images/ranges/controlpanel.jpg" alt="Range Management System">
+                        <img src="images/ranges/controlroom-live range state.jpg" alt="Range Management System">
                         <div class="project-overlay">
                             <div class="project-icon">
                                 <i class="fas fa-crosshairs"></i>
@@ -119,7 +125,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Central Command – Range Management System</h3>
-                        <p>Real-time shooting range scheduling, digital twin integrations, and user role management for the IDF.</p>
+                        <p>Real-time range operations platform with digital twin integration and distributed system architecture.</p>
                         <div class="project-meta">
                             <span class="tag">React</span>
                             <span class="tag">Firebase</span>
@@ -132,9 +138,9 @@
                 </a>
 
                 <!-- Range-Cal - Advanced Range Booking System -->
-                <div class="project-card float-animation" style="animation-delay: 0.5s;">
+                <a href="range-calendar.html" class="project-card card-3d-effect" style="animation-delay: 0.5s;">
                     <div class="project-image">
-                        <img src="images/ranges/controlpanel.jpg" alt="Range Calendar System">
+                        <img src="images/range_cal/map.jpg" alt="Range Calendar System">
                         <div class="project-overlay">
                             <div class="project-icon">
                                 <i class="fas fa-calendar-alt"></i>
@@ -143,50 +149,103 @@
                     </div>
                     <div class="project-info">
                         <h3>Range-Cal – Advanced Range Booking System</h3>
-                        <p>Interactive map-based range booking application with real-time availability tracking and approval workflows.</p>
+                        <p>GIS-based scheduling system with AI-driven resource allocation and multi-stage approval workflows.</p>
                         <div class="project-meta">
                             <span class="tag">React</span>
                             <span class="tag">Firebase</span>
                             <span class="tag">Material UI</span>
                         </div>
                         <p class="project-status">
-                            <i class="fas fa-circle status-active"></i> Production Ready
+                            <i class="fas fa-circle status-active"></i> Operational
                         </p>
                     </div>
-                </div>
+                </a>
 
-
-                <!-- Version Bravo - Alumni & Data Portal -->
-                <div class="project-card float-animation" style="animation-delay: 1.5s;">
-                    <div class="project-image locked">
-                        <div class="lock-overlay">
-                            <i class="fas fa-lock"></i>
+                <!-- Version Bravo Hub -->
+                <div class="project-card card-3d-effect under-dev-card" style="animation-delay: 1.0s;">
+                    <div class="project-image">
+                        <img src="images/version_bravo_hub/hub.jpg" alt="Version Bravo Hub">
+                        <div class="project-overlay">
+                            <div class="project-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Version Bravo – Alumni & Data Portal</h3>
-                        <p>Designed and developed the full-stack system for alumni CRM, data pipelines, and content delivery.</p>
+                        <h3>Version Bravo Hub</h3>
+                        <p>Scalable information infrastructure with distributed content delivery and real-time synchronization.</p>
                         <div class="project-meta">
                             <span class="tag">React</span>
                             <span class="tag">Firebase</span>
                             <span class="tag">Tailwind</span>
                         </div>
                         <p class="project-status">
-                            <i class="fas fa-circle status-active"></i> Active Project
+                            <i class="fas fa-circle status-wip"></i> Under Development
                         </p>
                     </div>
                 </div>
 
-                <!-- Product Catalog System -->
-                <div class="project-card float-animation" style="animation-delay: 2s;">
+                <!-- Version Bravo Portal -->
+                <a href="version-bravo-portal.html" class="project-card card-3d-effect" style="animation-delay: 1.5s;">
                     <div class="project-image">
-                        <div class="project-icon-placeholder">
-                            <i class="fas fa-wine-bottle"></i>
+                        <img src="images/version_bravo_portal/home.jpg" alt="Version Bravo Portal">
+                        <div class="project-overlay">
+                            <div class="project-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>AGAT – Product Catalog System</h3>
-                        <p>Dynamic product catalog with extensive filtering capabilities for alcohol, wine, beer, and food products. Features Hebrew RTL support.</p>
+                        <h3>Version Bravo Portal</h3>
+                        <p>Secure member platform with OAuth integration, encrypted content delivery, and microservices architecture.</p>
+                        <div class="project-meta">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Cloud Functions</span>
+                        </div>
+                        <p class="project-status">
+                            <i class="fas fa-circle status-active"></i> Active
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Homefront Defense System -->
+                <a href="homefront-defense.html" class="project-card card-3d-effect" style="animation-delay: 2.0s;">
+                    <div class="project-image">
+                        <img src="images/hagnash_db/1.jpg" alt="Homefront Defense System">
+                        <div class="project-overlay">
+                            <div class="project-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Homefront Defense – Personnel Qualification System</h3>
+                        <p>Personnel qualification system with geospatial mapping, real-time metrics, and distributed authentication.</p>
+                        <div class="project-meta">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Cloud Functions</span>
+                        </div>
+                        <p class="project-status">
+                            <i class="fas fa-circle status-active"></i> Operational
+                        </p>
+                    </div>
+                </a>
+
+                <!-- AGAT&D Product Catalog -->
+                <a href="agatd-catalog.html" class="project-card card-3d-effect" style="animation-delay: 2.5s;">
+                    <div class="project-image">
+                        <img src="images/catalog/product card.jpg" alt="AGAT&D Product Catalog">
+                        <div class="project-overlay">
+                            <div class="project-icon">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AGAT&D – Dynamic Product Catalog</h3>
+                        <p>Bidirectional catalog system with CSV data integration, virtual DOM optimization, and client-side filtering algorithms.</p>
                         <div class="project-meta">
                             <span class="tag">JavaScript</span>
                             <span class="tag">HTML/CSS</span>
@@ -196,133 +255,56 @@
                             <i class="fas fa-circle status-active"></i> Deployed
                         </p>
                     </div>
-                </div>
-
-                <!-- Personnel Training & Qualification System -->
-                <div class="project-card float-animation" style="animation-delay: 2.5s;">
-                    <div class="project-image locked">
-                        <div class="lock-overlay">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Homefront Defense – Personnel Qualification System</h3>
-                        <p>Comprehensive system for tracking training, certification, and operational readiness of personnel in the Homefront Settlement Defense Force.</p>
-                        <div class="project-meta">
-                            <span class="tag">React</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Cloud Functions</span>
-                        </div>
-                        <p class="project-status">
-                            <i class="fas fa-circle status-classified"></i> Classified Project
-                        </p>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Experience Timeline -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Professional Experience</h2>
-                <p class="section-subtitle">Where defense expertise meets technical innovation</p>
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
+        <div class="container" style="text-align: center;">
+            <div class="section-header" style="width: 100%;">
+                <h2 class="section-title">Organizations</h2>
+                <p class="section-subtitle">Trusted by leading organizations</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022 - Present</div>
-                    <div class="timeline-content glass-card">
-                        <h3>Israel Aerospace Industries (IAI)</h3>
-                        <h4>Project Manager - AI Training Systems</h4>
-                        <p>Leading development of classified AI training systems and infrastructure.</p>
-                        <div class="timeline-tech">
-                            <span>AI Systems</span>
-                            <span>Project Leadership</span>
-                        </div>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="images/logo/IDF_Border_Defense_Force_Insignia.svg.png" alt="IDF" />
                     </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021 - Present</div>
-                    <div class="timeline-content glass-card">
-                        <h3>Freelance Developer</h3>
-                        <h4>Full-Stack Development</h4>
-                        <p>Building mission-critical web applications for Central Command (IDF) and other defense organizations.</p>
-                        <div class="timeline-tech">
-                            <span>React</span>
-                            <span>Firebase</span>
-                            <span>UX Design</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020 - Present</div>
-                    <div class="timeline-content glass-card">
-                        <h3>Version Bravo</h3>
-                        <h4>Community & Infrastructure Lead</h4>
-                        <p>Managing tech infrastructure and community engagement for intelligence veterans organization.</p>
-                        <div class="timeline-tech">
-                            <span>Community</span>
-                            <span>Infrastructure</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2015 - 2020</div>
-                    <div class="timeline-content glass-card">
+                    <div class="client-info">
                         <h3>Israel Defense Forces</h3>
-                        <h4>Tactical Leader - Maglan & Paratroopers</h4>
-                        <p>Led special operations units in tactical deployments and training.</p>
-                        <div class="timeline-tech">
-                            <span>Leadership</span>
-                            <span>Special Ops</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Talks & Lectures -->
-    <section id="talks" class="talks">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Talks & Lectures</h2>
-                <p class="section-subtitle">Sharing knowledge and expertise</p>
-            </div>
-            <div class="talks-grid">
-                <div class="talk-card glass-card">
-                    <div class="talk-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="talk-content">
-                        <h3>Advanced AI Usage & Prompt Engineering</h3>
-                        <p>Series of lectures on effective AI utilization and prompt design techniques for operational efficiency.</p>
-                        <span class="talk-venue">Various Tech Companies & Educational Institutions</span>
-                        <div class="talk-date">
-                            <i class="fas fa-calendar-alt"></i> 2022 - Present
-                        </div>
+                        <p>Range management systems and operational applications for Central Command</p>
                     </div>
                 </div>
                 
-                <div class="talk-card glass-card">
-                    <div class="talk-icon">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="images/logo/Copy-of-VB_Horizontal_stacked_COLOR-bg-copy-6bdaab09-c80e7811-315w.png.webp" alt="Version Bravo" />
                     </div>
-                    <div class="talk-content">
-                        <h3>Defense Tech in Modern Operations</h3>
-                        <p>Technical overview of how modern software architecture supports defense operations.</p>
-                        <span class="talk-venue">Defense Technology Symposium</span>
-                        <div class="talk-date">
-                            <i class="fas fa-calendar-alt"></i> 2023
-                        </div>
+                    <div class="client-info">
+                        <h3>Version Bravo</h3>
+                        <p>Community portal and hub for intelligence veterans organization</p>
+                    </div>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="images/logo/agatd.png" alt="AGAT&D" />
+                    </div>
+                    <div class="client-info">
+                        <h3>AGAT&D</h3>
+                        <p>Dynamic product catalog system for beverages and specialty foods</p>
+                    </div>
+                </div>
+
+                <div class="client-card">
+                    <div class="client-logo">
+                        <img src="images/logo/PakmazLogo.svg.png" alt="Pakmaz" />
+                    </div>
+                    <div class="client-info">
+                        <h3>Pakmaz</h3>
+                        <p>Web development and digital solutions for logistics and operations</p>
                     </div>
                 </div>
             </div>
@@ -331,8 +313,8 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
+        <div class="container" style="text-align: center;">
+            <div class="section-header" style="width: 100%;">
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-subtitle">Let's discuss your project or opportunity</p>
             </div>
@@ -343,19 +325,37 @@
                         <a href="mailto:tamirsida25@gmail.com">tamirsida25@gmail.com</a>
                     </div>
                     <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+972523328127">052-3328127</a>
+                    </div>
+                    <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <a href="https://linkedin.com/in/tamir-sida-b118712a1" target="_blank">LinkedIn - Tamir Sida</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/tamirSida" target="_blank">GitHub - @tamirSida</a>
                     </div>
                     <div class="contact-item download">
                         <i class="fas fa-file-pdf"></i>
                         <a href="./Tamir_Sida_cv_pm.pdf" download>Download CV</a>
                     </div>
-                    <div class="availability">
-                        <div class="availability-status">
-                            <span class="status-indicator available"></span>
-                            <span>Available for select consulting projects</span>
+                    <div class="github-profile-card glass-card">
+                        <div class="github-card-header">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub Profile</h3>
                         </div>
-                        <p>Currently accepting new projects in defense tech, AI integration, and data systems.</p>
+                        <div class="github-card-content">
+                            <a href="https://github.com/tamirSida" target="_blank" class="github-username">@tamirSida</a>
+                            <p>Check out my repositories and open-source contributions.</p>
+                            <div class="github-stats">
+                                <div class="github-stat">
+                                    <span class="github-stat-number">22</span>
+                                    <span class="github-stat-label">Repositories</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/tamirSida" target="_blank" class="btn btn-outline github-btn">View Profile</a>
+                        </div>
                     </div>
                 </div>
                 <form class="contact-form glass-card">
@@ -390,16 +390,15 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
+        <div class="container" style="text-align: center;">
+            <div class="footer-content" style="display: flex; justify-content: space-between; width: 100%;">
                 <div class="footer-logo">
                     <div class="logo">TS<span class="accent">.</span></div>
                 </div>
                 <div class="footer-nav">
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#talks">Talks</a>
+                    <a href="#clients">Organizations</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-social">
@@ -412,7 +411,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Tamir Sida. All rights reserved.</p>
+                <p>&copy; 2025 Tamir Sida. All rights reserved. <a href="https://github.com/tamirSida" class="github-link" target="_blank">GitHub: @tamirSida</a></p>
             </div>
         </div>
     </footer>

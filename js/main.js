@@ -361,12 +361,12 @@ window.addEventListener('scroll', () => {
     navbar.style.boxShadow = 'var(--shadow-lg)';
     navbar.style.padding = '0.75rem 0';
     navbar.style.backdropFilter = 'blur(10px)';
-    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+    navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.9)';
   } else {
     navbar.style.boxShadow = 'var(--shadow)';
     navbar.style.padding = '1rem 0';
     navbar.style.backdropFilter = 'blur(5px)';
-    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+    navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.8)';
   }
   
   lastScrollTop = scrollTop;
@@ -416,14 +416,26 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial check for elements in viewport
   fadeInElements();
   
-  // Handle project card clicks for locked projects
+  // Handle project card clicks for locked and under development projects
   const lockedProjects = document.querySelectorAll('.project-card:not(a)');
   lockedProjects.forEach(card => {
     card.addEventListener('click', function() {
+      // Determine message based on card class
+      let message = '';
+      let icon = '';
+      
+      if (card.classList.contains('under-dev-card')) {
+        message = 'This project is currently under development';
+        icon = 'fa-code-branch';
+      } else {
+        message = 'This project is classified';
+        icon = 'fa-lock';
+      }
+      
       // Create a notification that appears briefly
       const notification = document.createElement('div');
       notification.className = 'project-notification';
-      notification.innerHTML = '<i class="fas fa-lock"></i> This project is classified';
+      notification.innerHTML = `<i class="fas ${icon}"></i> ${message}`;
       
       // Add notification styles
       const notificationStyle = document.createElement('style');
@@ -458,6 +470,13 @@ document.addEventListener('DOMContentLoaded', () => {
       document.head.appendChild(notificationStyle);
       
       document.body.appendChild(notification);
+      
+      // Add cursor style to indicate clickable card
+      document.head.appendChild(document.createElement('style')).textContent = `
+        .project-card:not(a) {
+          cursor: pointer;
+        }
+      `;
       
       // Remove notification after 3 seconds
       setTimeout(() => {
@@ -660,4 +679,81 @@ if (galleryItems.length > 0) {
       });
     });
   });
-} 
+}
+
+// Initialize particle.js for tech background effect if available
+document.addEventListener('DOMContentLoaded', function() {
+    // Existing functionality
+    
+    // Project Cards Animation
+    initProjectCards();
+});
+
+// Initialize project cards with 3D hover effects and staggered animation
+function initProjectCards() {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    // Set animation delay based on card index
+    projectCards.forEach((card, index) => {
+        card.style.setProperty('--card-index', index);
+        
+        // Add 3D hover effect
+        if (card.classList.contains('card-3d-effect')) {
+            // Mouse movement 3D effect
+            card.addEventListener('mousemove', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left; // x position within the card
+                const y = e.clientY - rect.top; // y position within the card
+                
+                // Calculate rotation based on mouse position
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                // Limit rotation to a small range (5 degrees)
+                const rotateY = ((x - centerX) / centerX) * 5;
+                const rotateX = ((centerY - y) / centerY) * 5;
+                
+                // Apply the rotation transform
+                this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+                
+                // Add depth to inner elements
+                const projectImage = this.querySelector('.project-image');
+                const projectInfo = this.querySelector('.project-info');
+                
+                if (projectImage) {
+                    projectImage.style.transform = `translateZ(20px)`;
+                }
+                
+                if (projectInfo) {
+                    projectInfo.style.transform = `translateZ(10px)`;
+                }
+            });
+            
+            // Reset on mouse leave
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+                
+                const projectImage = this.querySelector('.project-image');
+                const projectInfo = this.querySelector('.project-info');
+                
+                if (projectImage) {
+                    projectImage.style.transform = 'translateZ(0)';
+                }
+                
+                if (projectInfo) {
+                    projectInfo.style.transform = 'translateZ(0)';
+                }
+            });
+        }
+    });
+}
+
+// Fix for the duplicate CSS for project cards in the main CSS file
+document.addEventListener('DOMContentLoaded', function() {
+    // Remove duplicate animation property from project cards
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        // Ensure proper animation stacking
+        card.style.animationDelay = `${parseFloat(card.style.animationDelay || 0) + (0.1 * Array.from(projectCards).indexOf(card))}s`;
+    });
+}); 

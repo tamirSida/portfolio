@@ -12,13 +12,21 @@ Welcome to my portfolio repository. I'm Tamir Sida, a project manager, AI lectur
 ```
 /
 ├── index.html              # Main portfolio page
-├── range-project.html      # Detailed page for the Range Management System project
 ├── styles/
 │   └── main.css            # Main stylesheet
 ├── js/
 │   └── main.js             # JavaScript for interactions and animations
-└── images/
-    └── ranges/             # Images for the Range Management System project
+├── images/
+│   ├── catalog/            # AGAT&D Product Catalog images
+│   ├── hagnash_db/         # Homefront Defense System images
+│   ├── logo/               # Organization logos
+│   ├── range_cal/          # Range-Cal System images
+│   ├── ranges/             # Range Management System images
+│   └── version_bravo_portal/ # Version Bravo Portal images
+│
+├── scripts/
+│   └── generate-favicon.sh # Utility to generate favicons
+└── favicon.ico             # Site favicon
 ```
 
 ## 🚀 Features
