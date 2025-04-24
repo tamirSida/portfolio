@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamir Sida | CS Student & Developer</title>
-    <meta name="description" content="Portfolio of Tamir Sida - Computer Science Student, Full-Stack Developer with expertise in defense technology and AI systems.">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Tamir Sida | Military-Grade Systems Developer</title>
+    <meta name="description" content="Portfolio of Tamir Sida - Specialized in defense technology and mission-critical applications with expertise in secure systems development.">
+    
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/modern.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -23,7 +24,7 @@
         <div class="container">
             <div class="logo">TS<span class="accent">.</span></div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#about" class="active">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#clients">Organizations</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -37,67 +38,82 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="tech-particles" id="particles-js"></div>
-        <div class="container" style="text-align: center; width: 100%; display: flex; flex-direction: column; align-items: center;">
-            <h1>Building tech that empowers <span class="gradient-text">defense, education, and innovation</span></h1>
-            <p>Computer Science Student | Developer | AI Enthusiast</p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-            </div>
-            <div class="scroll-down">
-                <span>Scroll Down</span>
-                <i class="fas fa-chevron-down"></i>
+    <section class="hero" id="home">
+        <div id="particles-js" class="particles-container"></div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Building <span class="gradient-text">defense-grade systems</span> that empower missions</h1>
+                <p class="hero-description">Computer Science Student specializing in secure, mission-critical applications for defense and intelligence organizations</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container" style="text-align: center;">
-            <div class="section-header" style="width: 100%;">
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">Computer Science & Entrepreneurship</p>
             </div>
-            <div class="about-content">
-                <div class="about-text">
+            
+            <div class="about-grid">
+                <div class="about-content fade-in delay-100">
                     <p>Computer Science student at Reichman University (IRIS - studies in English) pursuing a double major in Entrepreneurship (B.A) and Computer Science (B.Sc), enrolled in the honors programs of both schools. I combine native English proficiency with technical expertise in AI, digital systems, and product innovation.</p>
-                    <p>I have experience in developing mission-critical systems, including real-time management platforms and AI-based data processing tools. My CS studies focus on data structures, algorithms, and systems engineering.</p>
+                    
+                    <p>I specialize in developing mission-critical systems, including real-time management platforms and AI-based data processing tools. My focus is on creating secure, robust applications that meet the stringent requirements of defense organizations.</p>
+                    
+                    <p>With experience in both frontend and backend development, I build comprehensive full-stack solutions that emphasize security, usability, and performance.</p>
                 </div>
-                <div class="skills glass-card">
-                    <h3 class="skills-title">Technical Expertise</h3>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Frontend</h4>
-                            <div class="skill-items">
-                                <span>React</span>
-                                <span>HTML/CSS</span>
-                                <span>UX Design</span>
-                            </div>
+                
+                <div class="skills-grid fade-in delay-200">
+                    <div class="skill-category">
+                        <h4>Frontend Development</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Material UI</span>
+                            <span class="skill-tag">Responsive Design</span>
                         </div>
-                        <div class="skill-category">
-                            <h4>Backend/DB</h4>
-                            <div class="skill-items">
-                                <span>Firebase</span>
-                                <span>Java</span>
-                                <span>Python</span>
-                            </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Backend & Database</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
                         </div>
-                        <div class="skill-category">
-                            <h4>Development</h4>
-                            <div class="skill-items">
-                                <span>Linux</span>
-                                <span>Git</span>
-                                <span>Algorithms</span>
-                            </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Development Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Testing</span>
                         </div>
-                        <div class="skill-category">
-                            <h4>AI/ML</h4>
-                            <div class="skill-items">
-                                <span>Prompt Engineering</span>
-                                <span>Data Analytics</span>
-                            </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>AI & Data</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Prompt Engineering</span>
+                            <span class="skill-tag">Data Analytics</span>
+                            <span class="skill-tag">Algorithm Design</span>
+                            <span class="skill-tag">NLP</span>
                         </div>
                     </div>
                 </div>
@@ -106,201 +122,201 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container" style="text-align: center;">
-            <div class="section-header" style="width: 100%;">
-                <h2 class="section-title">Project Highlights</h2>
+    <section id="projects" class="section" style="background-color: var(--bg-darker);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Projects</h2>
                 <p class="section-subtitle">Mission-critical applications with purpose</p>
             </div>
-            <div class="project-cards">
-                <!-- Central Command - Range Management System -->
-                <a href="range-management.html" class="project-card card-3d-effect">
-                    <div class="project-image">
-                        <img src="images/ranges/controlroom-live range state.jpg" alt="Range Management System">
+            
+            <div class="projects-grid">
+                <!-- Range Management System -->
+                <a href="range-management.html" class="project-card fade-in delay-100">
+                    <div class="project-image" style="height: 220px; overflow: hidden;">
+                        <img src="images/ranges/controlroom-live range state.jpg" alt="Range Management System" style="object-fit: cover; width: 100%; height: 100%;">
                         <div class="project-overlay">
-                            <div class="project-icon">
-                                <i class="fas fa-crosshairs"></i>
-                            </div>
+                            <i class="fas fa-eye"></i>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Central Command – Range Management System</h3>
-                        <p>Real-time range operations platform with digital twin integration and distributed system architecture.</p>
-                        <div class="project-meta">
+                    <div class="project-content">
+                        <h3 class="project-title">Intelligent Shooting Range Management System</h3>
+                        <p class="project-description">Real-time shooting range scheduling, digital twin integrations, and user role management for the IDF.</p>
+                        <div class="project-tags">
                             <span class="tag">React</span>
                             <span class="tag">Firebase</span>
                             <span class="tag">Firestore</span>
                         </div>
-                        <p class="project-status">
-                            <i class="fas fa-circle status-active"></i> In deployment at IDF training facilities
-                        </p>
+                        <div class="project-status">
+                            <div class="status-icon status-active"></div>
+                            <span>In deployment at IDF training facilities</span>
+                        </div>
                     </div>
                 </a>
 
-                <!-- Range-Cal - Advanced Range Booking System -->
-                <a href="range-calendar.html" class="project-card card-3d-effect" style="animation-delay: 0.5s;">
-                    <div class="project-image">
-                        <img src="images/range_cal/map.jpg" alt="Range Calendar System">
+                <!-- Range-Cal -->
+                <a href="range-calendar.html" class="project-card fade-in delay-200">
+                    <div class="project-image" style="height: 220px; overflow: hidden;">
+                        <img src="images/range_cal/map.jpg" alt="Range Calendar System" style="object-fit: cover; width: 100%; height: 100%;">
                         <div class="project-overlay">
-                            <div class="project-icon">
-                                <i class="fas fa-calendar-alt"></i>
-                            </div>
+                            <i class="fas fa-eye"></i>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Range-Cal – Advanced Range Booking System</h3>
-                        <p>GIS-based scheduling system with AI-driven resource allocation and multi-stage approval workflows.</p>
-                        <div class="project-meta">
+                    <div class="project-content">
+                        <h3 class="project-title">Advanced Range Booking System</h3>
+                        <p class="project-description">Interactive map-based range booking application with real-time availability tracking and approval workflows.</p>
+                        <div class="project-tags">
                             <span class="tag">React</span>
                             <span class="tag">Firebase</span>
                             <span class="tag">Material UI</span>
                         </div>
-                        <p class="project-status">
-                            <i class="fas fa-circle status-active"></i> Operational
-                        </p>
+                        <div class="project-status">
+                            <div class="status-icon status-active"></div>
+                            <span>MVP</span>
+                        </div>
                     </div>
                 </a>
 
                 <!-- Version Bravo Hub -->
-                <div class="project-card card-3d-effect under-dev-card" style="animation-delay: 1.0s;">
-                    <div class="project-image">
-                        <img src="images/logo/Copy-of-VB_Horizontal_stacked_COLOR-bg-copy-6bdaab09-c80e7811-315w.png.webp" alt="Version Bravo Hub">
+                <a href="version-bravo-hub.html" class="project-card fade-in delay-300">
+                    <div class="project-image" style="height: 220px; overflow: hidden;">
+                        <img src="images/logo/Copy-of-VB_Horizontal_stacked_COLOR-bg-copy-6bdaab09-c80e7811-315w.png.webp" alt="Version Bravo Hub" style="object-fit: contain; width: 100%; height: 100%; background-color: white; padding: 2rem;">
                         <div class="project-overlay">
-                            <div class="project-icon">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
+                            <i class="fas fa-eye"></i>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Version Bravo Hub</h3>
-                        <p>Centralized information system for community resources, events management, and organization-wide communications.</p>
+                    <div class="project-content">
+                        <h3 class="project-title">Version Bravo Hub</h3>
+                        <p class="project-description">Centralized information system for community resources, events management, and organization-wide communications.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
                         <div class="project-status">
-                            <span><i class="fas fa-circle status-wip"></i> Under Production</span>
+                            <div class="status-icon status-wip"></div>
+                            <span>Under Production</span>
                         </div>
-                        <a href="version-bravo-hub.html" class="btn btn-outline">View Project</a>
                     </div>
-                </div>
+                </a>
 
                 <!-- Version Bravo Portal -->
-                <a href="version-bravo-portal.html" class="project-card card-3d-effect" style="animation-delay: 1.5s;">
-                    <div class="project-image">
-                        <img src="images/version_bravo_portal/home.jpg" alt="Version Bravo Portal">
+                <a href="version-bravo-portal.html" class="project-card fade-in delay-400">
+                    <div class="project-image" style="height: 220px; overflow: hidden;">
+                        <img src="images/version_bravo_portal/home.jpg" alt="Version Bravo Portal" style="object-fit: cover; width: 100%; height: 100%;">
                         <div class="project-overlay">
-                            <div class="project-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
+                            <i class="fas fa-eye"></i>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Version Bravo Portal</h3>
-                        <p>Secure member platform with OAuth integration, encrypted content delivery, and microservices architecture.</p>
-                        <div class="project-meta">
+                    <div class="project-content">
+                        <h3 class="project-title">Version Bravo Portal</h3>
+                        <p class="project-description">Comprehensive alumni portal with member management, event registration, and content delivery for intelligence veterans.</p>
+                        <div class="project-tags">
                             <span class="tag">React</span>
                             <span class="tag">Firebase</span>
                             <span class="tag">Cloud Functions</span>
                         </div>
-                        <p class="project-status">
-                            <i class="fas fa-circle status-active"></i> Active
-                        </p>
+                        <div class="project-status">
+                            <div class="status-icon status-active"></div>
+                            <span>Active</span>
+                        </div>
                     </div>
                 </a>
 
                 <!-- Homefront Defense System -->
-                <a href="homefront-defense.html" class="project-card card-3d-effect" style="animation-delay: 2.0s;">
-                    <div class="project-image">
-                        <img src="images/hagnash_db/1.jpg" alt="Homefront Defense System">
+                <a href="homefront-defense.html" class="project-card fade-in delay-300">
+                    <div class="project-image" style="height: 220px; overflow: hidden;">
+                        <img src="images/hagnash_db/1.jpg" alt="Homefront Defense System" style="object-fit: cover; width: 100%; height: 100%;">
                         <div class="project-overlay">
-                            <div class="project-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
+                            <i class="fas fa-eye"></i>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Homefront Defense – Personnel Qualification System</h3>
-                        <p>Personnel qualification system with geospatial mapping, real-time metrics, and distributed authentication.</p>
-                        <div class="project-meta">
+                    <div class="project-content">
+                        <h3 class="project-title">Homefront Defense – Personnel Qualification System</h3>
+                        <p class="project-description">Comprehensive system for tracking training, certification, and operational readiness of personnel in the Homefront Settlement Defense Force.</p>
+                        <div class="project-tags">
                             <span class="tag">React</span>
                             <span class="tag">Firebase</span>
                             <span class="tag">Cloud Functions</span>
                         </div>
-                        <p class="project-status">
-                            <i class="fas fa-circle status-active"></i> Operational
-                        </p>
+                        <div class="project-status">
+                            <div class="status-icon status-active"></div>
+                            <span>Operational</span>
+                        </div>
                     </div>
                 </a>
 
                 <!-- AGAT&D Product Catalog -->
-                <a href="agatd-catalog.html" class="project-card card-3d-effect" style="animation-delay: 2.5s;">
-                    <div class="project-image">
-                        <img src="images/catalog/product card.jpg" alt="AGAT&D Product Catalog">
+                <a href="agatd-catalog.html" class="project-card fade-in delay-400">
+                    <div class="project-image" style="height: 220px; overflow: hidden;">
+                        <img src="images/catalog/product card.jpg" alt="AGAT&D Product Catalog" style="object-fit: cover; width: 100%; height: 100%;">
                         <div class="project-overlay">
-                            <div class="project-icon">
-                                <i class="fas fa-tags"></i>
-                            </div>
+                            <i class="fas fa-eye"></i>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>AGAT&D – Dynamic Product Catalog</h3>
-                        <p>Bidirectional catalog system with CSV data integration, virtual DOM optimization, and client-side filtering algorithms.</p>
-                        <div class="project-meta">
+                    <div class="project-content">
+                        <h3 class="project-title">AGAT&D – Dynamic Product Catalog</h3>
+                        <p class="project-description">Dynamic product catalog with extensive filtering capabilities for alcohol, wine, beer, and food products. Features Hebrew RTL support.</p>
+                        <div class="project-tags">
                             <span class="tag">JavaScript</span>
                             <span class="tag">HTML/CSS</span>
                             <span class="tag">CSV Data</span>
                         </div>
-                        <p class="project-status">
-                            <i class="fas fa-circle status-active"></i> Deployed
-                        </p>
+                        <div class="project-status">
+                            <div class="status-icon status-active"></div>
+                            <span>Deployed</span>
+                        </div>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients">
-        <div class="container" style="text-align: center;">
-            <div class="section-header" style="width: 100%;">
+    <!-- Clients/Organizations Section -->
+    <section id="clients" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
                 <h2 class="section-title">Organizations</h2>
-                <p class="section-subtitle">Trusted by leading organizations</p>
+                <p class="section-subtitle">Trusted by leading institutions</p>
             </div>
-            <div class="clients-grid">
-                <div class="client-card">
-                    <div class="client-logo">
-                        <img src="images/logo/IDF_Border_Defense_Force_Insignia.svg.png" alt="IDF" />
+            
+            <div class="projects-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem;">
+                <div class="project-card fade-in delay-100" style="max-width: 100%;">
+                    <div class="project-image" style="height: 150px;">
+                        <img src="images/logo/IDF_Border_Defense_Force_Insignia.svg.png" alt="IDF" style="object-fit: contain; padding: 1rem;">
                     </div>
-                    <div class="client-info">
-                        <h3>Israel Defense Forces</h3>
-                        <p>Range management systems and operational applications for Central Command</p>
-                    </div>
-                </div>
-                
-                <div class="client-card">
-                    <div class="client-logo">
-                        <img src="images/logo/Copy-of-VB_Horizontal_stacked_COLOR-bg-copy-6bdaab09-c80e7811-315w.png.webp" alt="Version Bravo" />
-                    </div>
-                    <div class="client-info">
-                        <h3>Version Bravo</h3>
-                        <p>Community portal and hub for intelligence veterans organization</p>
+                    <div class="project-content">
+                        <h3 class="project-title" style="font-size: 1.1rem;">HomeFront Defense - IDF</h3>
+                        <p class="project-description" style="font-size: 0.9rem;">Range management systems and operational applications</p>
                     </div>
                 </div>
                 
-                <div class="client-card">
-                    <div class="client-logo">
-                        <img src="images/logo/agatd.png" alt="AGAT&D" />
+                <div class="project-card fade-in delay-200" style="max-width: 100%;">
+                    <div class="project-image" style="height: 150px;">
+                        <img src="images/logo/Copy-of-VB_Horizontal_stacked_COLOR-bg-copy-6bdaab09-c80e7811-315w.png.webp" alt="Version Bravo" style="object-fit: contain; padding: 1rem;">
                     </div>
-                    <div class="client-info">
-                        <h3>AGAT&D</h3>
-                        <p>Dynamic product catalog system for beverages and specialty foods</p>
+                    <div class="project-content">
+                        <h3 class="project-title" style="font-size: 1.1rem;">Version Bravo</h3>
+                        <p class="project-description" style="font-size: 0.9rem;">Community portal and hub for intelligence veterans</p>
                     </div>
                 </div>
-
-                <div class="client-card">
-                    <div class="client-logo">
-                        <img src="images/logo/PakmazLogo.svg.png" alt="Pakmaz" />
+                
+                <div class="project-card fade-in delay-300" style="max-width: 100%;">
+                    <div class="project-image" style="height: 150px;">
+                        <img src="images/logo/agatd.png" alt="AGAT&D" style="object-fit: contain; padding: 1rem;">
                     </div>
-                    <div class="client-info">
-                        <h3>Pakmaz</h3>
-                        <p>Web development and digital solutions for logistics and operations</p>
+                    <div class="project-content">
+                        <h3 class="project-title" style="font-size: 1.1rem;">AGAT&D</h3>
+                        <p class="project-description" style="font-size: 0.9rem;">Dynamic product catalog for beverages and foods</p>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in delay-400" style="max-width: 100%;">
+                    <div class="project-image" style="height: 150px;">
+                        <img src="images/logo/PakmazLogo.svg.png" alt="Pakmaz" style="object-fit: contain; padding: 1rem;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" style="font-size: 1.1rem;">Central Command - IDF</h3>
+                        <p class="project-description" style="font-size: 0.9rem;">Shooting Range Management</p>
                     </div>
                 </div>
             </div>
@@ -308,112 +324,107 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container" style="text-align: center;">
-            <div class="section-header" style="width: 100%;">
+    <section id="contact" class="section" style="background-color: var(--bg-darker);">
+        <div class="container">
+            <div class="section-header fade-in">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss your project or opportunity</p>
+                <p class="section-subtitle">Contact me directly through these channels</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-info">
+            
+            <div class="contact-grid" style="grid-template-columns: 1fr;">
+                <div class="contact-info fade-in delay-100" style="max-width: 600px; margin: 0 auto;">
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:tamirsida25@gmail.com">tamirsida25@gmail.com</a>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:tamirsida25@gmail.com">tamirsida25@gmail.com</a>
+                        </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+972523328127">052-3328127</a>
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <a href="tel:+972523328127">052-3328127</a>
+                        </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://linkedin.com/in/tamir-sida-b118712a1" target="_blank">LinkedIn - Tamir Sida</a>
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/tamir-sida-b118712a1" target="_blank">Tamir Sida</a>
+                        </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/tamirSida" target="_blank">GitHub - @tamirSida</a>
-                    </div>
-                    <div class="contact-item download">
-                        <i class="fas fa-file-pdf"></i>
-                        <a href="./Tamir_Sida_cv_pm.pdf" download>Download CV</a>
-                    </div>
-                    <div class="github-profile-card glass-card">
-                        <div class="github-card-header">
+                        <div class="contact-icon">
                             <i class="fab fa-github"></i>
-                            <h3>GitHub Profile</h3>
                         </div>
-                        <div class="github-card-content">
-                            <a href="https://github.com/tamirSida" target="_blank" class="github-username">@tamirSida</a>
-                            <p>Check out my repositories and open-source contributions.</p>
-                            <div class="github-stats">
-                                <div class="github-stat">
-                                    <span class="github-stat-number">22</span>
-                                    <span class="github-stat-label">Repositories</span>
-                                </div>
-                            </div>
-                            <a href="https://github.com/tamirSida" target="_blank" class="btn btn-outline github-btn">View Profile</a>
+                        <div class="contact-text">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/tamirSida" target="_blank">@tamirSida</a>
                         </div>
                     </div>
+                    
+
                 </div>
-                <form class="contact-form glass-card">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject">
-                            <option value="project">Project Inquiry</option>
-                            <option value="speaking">Speaking Opportunity</option>
-                            <option value="consulting">Consulting</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container" style="text-align: center;">
-            <div class="footer-content" style="display: flex; justify-content: space-between; width: 100%;">
-                <div class="footer-logo">
-                    <div class="logo">TS<span class="accent">.</span></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">TS<span class="accent">.</span></div>
+                    <p class="footer-text">Full-stack developer specialized in military-grade applications and secure systems. Building mission-critical software for those who serve.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/tamir-sida-b118712a1" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/tamirSida" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
                 </div>
+                
                 <div class="footer-nav">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#clients">Organizations</a>
-                    <a href="#contact">Contact</a>
+                    <h4 class="footer-links-title">Navigation</h4>
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#clients">Organizations</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 </div>
-                <div class="footer-social">
-                    <a href="https://linkedin.com/in/tamir-sida-b118712a1" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/tamirSida" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
+                
+                <div class="footer-nav">
+                    <h4 class="footer-links-title">Projects</h4>
+                    <div class="footer-links">
+                        <a href="range-management.html">Range Management</a>
+                        <a href="range-calendar.html">Range Calendar</a>
+                        <a href="version-bravo-hub.html">Version Bravo Hub</a>
+                        <a href="version-bravo-portal.html">Version Bravo Portal</a>
+                    </div>
                 </div>
             </div>
+            
             <div class="copyright">
-                <p>&copy; 2025 Tamir Sida. All rights reserved. <a href="https://github.com/tamirSida" class="github-link" target="_blank">GitHub: @tamirSida</a></p>
+                <p>&copy; 2023 Tamir Sida. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/modern.js"></script>
 </body>
 </html> 
