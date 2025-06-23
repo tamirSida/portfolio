@@ -28,7 +28,59 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Scroll animations with Intersection Observer
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('active') && 
+        !hamburger.contains(e.target) && 
+        !navLinks.contains(e.target)) {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+      document.body.classList.remove('nav-open');
+    }
+  });
+
+  // Prevent body scroll when mobile menu is open
+  const body = document.body;
+  const originalStyle = window.getComputedStyle(body).overflow;
+  
+  hamburger?.addEventListener('click', function() {
+    if (this.classList.contains('active')) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = originalStyle;
+    }
+  });
+
+  // Mobile touch improvements for project cards
+  const projectCards = document.querySelectorAll('.project-card');
+  projectCards.forEach(card => {
+    let touchStartY = 0;
+    let touchEndY = 0;
+    
+    card.addEventListener('touchstart', (e) => {
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+    
+    card.addEventListener('touchend', (e) => {
+      touchEndY = e.changedTouches[0].screenY;
+      handleSwipe();
+    }, { passive: true });
+    
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const diff = touchStartY - touchEndY;
+      
+      if (Math.abs(diff) > swipeThreshold) {
+        // Add visual feedback for swipe
+        card.style.transform = 'scale(0.98)';
+        setTimeout(() => {
+          card.style.transform = '';
+        }, 150);
+      }
+    }
+  });
+
+  // Mobile-optimized scroll animations
   const fadeElements = document.querySelectorAll('.fade-in');
   
   const fadeObserver = new IntersectionObserver((entries) => {
@@ -40,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }, {
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    rootMargin: '0px 0px -50px 0px' // Reduced margin for mobile
   });
   
   fadeElements.forEach(element => {
@@ -69,6 +121,159 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Mobile-specific smooth scrolling
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+    smoothScrollLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  }
+
+  // Mobile performance optimizations
+  let ticking = false;
+  
+  function updateOnScroll() {
+    // Any scroll-based updates can go here
+    ticking = false;
+  }
+  
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateOnScroll);
+      ticking = true;
+    }
+  });
+
+  // Mobile viewport height fix for iOS Safari
+  function setVH() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  
+  setVH();
+  window.addEventListener('resize', setVH);
+  window.addEventListener('orientationchange', setVH);
+
+  // Count-up animation for metrics
+  function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    
+    function updateCounter() {
+      start += increment;
+      if (start < target) {
+        element.textContent = Math.floor(start) + (target === 100 ? '%' : '+');
+        requestAnimationFrame(updateCounter);
+      } else {
+        element.textContent = target + (target === 100 ? '%' : '+');
+      }
+    }
+    
+    updateCounter();
+  }
+
+  // Trigger count-up animation when metrics come into view
+  const metricsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const metricNumbers = entry.target.querySelectorAll('.metric-number');
+        metricNumbers.forEach(metric => {
+          const text = metric.textContent;
+          const number = parseInt(text.replace(/[^0-9]/g, ''));
+          animateCounter(metric, number);
+        });
+        metricsObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  const heroMetrics = document.querySelector('.hero-metrics');
+  if (heroMetrics) {
+    metricsObserver.observe(heroMetrics);
+  }
+
+  // About section read more/less functionality
+  window.toggleAboutText = function() {
+    const aboutTextFull = document.querySelector('.about-text-full');
+    const readMoreText = document.querySelector('.read-more-text');
+    const readLessText = document.querySelector('.read-less-text');
+    const readMoreIcon = document.querySelector('.read-more-icon');
+    const readLessIcon = document.querySelector('.read-less-icon');
+    
+    if (aboutTextFull.style.display === 'none') {
+      // Show full text
+      aboutTextFull.style.display = 'block';
+      readMoreText.style.display = 'none';
+      readLessText.style.display = 'inline';
+      readMoreIcon.style.display = 'none';
+      readLessIcon.style.display = 'inline';
+      
+      // Smooth scroll to show the new content
+      setTimeout(() => {
+        aboutTextFull.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'nearest' 
+        });
+      }, 100);
+    } else {
+      // Hide full text
+      aboutTextFull.style.display = 'none';
+      readMoreText.style.display = 'inline';
+      readLessText.style.display = 'none';
+      readMoreIcon.style.display = 'inline';
+      readLessIcon.style.display = 'none';
+    }
+  };
+
+  // Project cards read more/less functionality
+  window.toggleProjectDescription = function(button) {
+    const projectCard = button.closest('.project-card');
+    const descriptionFull = projectCard.querySelector('.project-description-full');
+    const readMoreText = button.querySelector('.read-more-text');
+    const readLessText = button.querySelector('.read-less-text');
+    const readMoreIcon = button.querySelector('.read-more-icon');
+    const readLessIcon = button.querySelector('.read-less-icon');
+    
+    if (descriptionFull.style.display === 'none') {
+      // Show full text
+      descriptionFull.style.display = 'block';
+      readMoreText.style.display = 'none';
+      readLessText.style.display = 'inline';
+      readMoreIcon.style.display = 'none';
+      readLessIcon.style.display = 'inline';
+      
+      // Smooth scroll to show the new content
+      setTimeout(() => {
+        descriptionFull.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'nearest' 
+        });
+      }, 100);
+    } else {
+      // Hide full text
+      descriptionFull.style.display = 'none';
+      readMoreText.style.display = 'inline';
+      readLessText.style.display = 'none';
+      readMoreIcon.style.display = 'inline';
+      readLessIcon.style.display = 'none';
+    }
+  };
 
   // Particles background for hero section
   const particlesContainer = document.getElementById('particles-js');
@@ -277,29 +482,6 @@ document.addEventListener('DOMContentLoaded', function() {
           }, 300);
         }
       });
-    });
-  });
-
-  // Smooth scroll polyfill
-  const smoothScrollLinks = document.querySelectorAll('a[href^="#"]:not([href="#"])');
-  
-  smoothScrollLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      
-      if (targetElement) {
-        const headerOffset = 80;
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
     });
   });
 

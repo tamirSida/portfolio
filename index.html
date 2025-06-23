@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamir Sida | Full-Stack Developer & Startup MVP Specialist</title>
-    <meta name="description" content="Portfolio of Tamir Sida - Specialized in defense technology, startup MVPs, and mission-critical applications with expertise in secure systems development.">
+    <title>Tamir Sida | Full-Stack Developer & Flexible Software Solutions</title>
+    <meta name="description" content="Full-Stack Developer specializing in lightweight, customizable software solutions for defense organizations, startups, and enterprises. 15+ projects delivered across defense, fintech, and commercial sectors.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -13,7 +13,7 @@
     
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/modern.css">
@@ -22,11 +22,12 @@
     <!-- Navigation -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <div class="logo">TS<span class="accent">.</span></div>
+            <div class="logo">Tamir Sida</div>
             <ul class="nav-links">
                 <li><a href="#about" class="active">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#companies">Companies</a></li>
+                <li><a href="#clients">Clients</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger" aria-label="Toggle menu">
@@ -39,17 +40,20 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div id="particles-js" class="particles-container" aria-hidden="true"></div>
         <div class="container">
             <div class="hero-content fade-in">
-                <h1 class="hero-title">Building <span class="gradient-text">secure systems</span> and <span class="gradient-text">startup MVPs</span></h1>
-                <p class="hero-description">Full-Stack Developer specializing in defense-grade applications, startup MVPs, and mission-critical systems for organizations worldwide</p>
+                <div class="hero-badge">
+                    <span>Full-Stack Developer</span>
+                </div>
+                <h1 class="hero-title">Building <span class="gradient-text">lightweight software solutions</span> for defense organizations and innovative startups</h1>
+                <p class="hero-description">Specialized in lightweight software solutions for defense organizations, startups, and enterprises. Delivering high-performance systems that drive operational excellence and business growth.</p>
+                
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">
                         <i class="fas fa-rocket" aria-hidden="true"></i> View Projects
                     </a>
                     <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-paper-plane" aria-hidden="true"></i> Contact Me
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> Get In Touch
                     </a>
                 </div>
             </div>
@@ -61,64 +65,126 @@
         <div class="container">
             <div class="section-header fade-in">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Full-Stack Developer & Startup MVP Specialist</p>
+                <p class="section-subtitle">Full-Stack Developer & Flexible Software Solutions</p>
             </div>
             
             <div class="about-grid">
                 <div class="about-content fade-in delay-100">
-                    <p>I'm a Computer Science and Entrepreneurship student at Reichman University, specializing in both secure defense applications and rapid startup MVP development. As a freelancer, I build lightweight, high-performance solutions that are fast, functional, and purpose-built.</p>
+                    <div class="about-text-mobile">
+                        <p class="about-text-short">I'm a full-stack developer with extensive experience building lightweight software solutions for defense organizations and rapid MVPs for innovative startups.</p>
+                        
+                        <div class="about-text-full" style="display: none;">
+                            <p>My expertise spans from classified military systems to cutting-edge startup platforms. I specialize in developing lightweight, scalable solutions that meet the highest standards of reliability and performance. Whether it's a defense-grade system requiring top-level security or a startup's first MVP that needs to impress investors, I deliver solutions that exceed expectations.</p>
 
-                    <p>My expertise spans from classified military systems to innovative startup platforms. I excel in out-of-the-box thinking—developing intuitive tools, AI-powered systems, and responsive web applications. Whether it's a defense-grade system or a startup's first MVP, my approach blends speed, security, and smart design to create solutions that deliver results.</p>
+                            <p>I've successfully delivered 15+ projects across defense, fintech, enterprise, and startup sectors. My unique combination of security-focused development and rapid MVP delivery makes me the ideal partner for organizations that need both robust, secure systems and fast time-to-market.</p>
+                        </div>
+                        
+                        <button class="read-more-btn" onclick="toggleAboutText()">
+                            <span class="read-more-text">Read More</span>
+                            <span class="read-less-text" style="display: none;">Read Less</span>
+                            <i class="fas fa-chevron-down read-more-icon"></i>
+                            <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                        </button>
+                    </div>
 
-                    <p>I've successfully delivered MVPs for multiple startups, helping them validate ideas, secure funding, and scale rapidly. My dual focus on security-critical applications and fast-paced startup development gives me a unique perspective on building both robust and agile systems.</p>
+                    <div class="about-text-desktop">
+                        <p class="lead-text">I'm a full-stack developer with extensive experience building lightweight software solutions for defense organizations and rapid MVPs for innovative startups.</p>
+
+                        <p>My expertise spans from classified military systems to cutting-edge startup platforms. I specialize in developing lightweight, scalable solutions that meet the highest standards of reliability and performance. Whether it's a defense-grade system requiring top-level security or a startup's first MVP that needs to impress investors, I deliver solutions that exceed expectations.</p>
+
+                        <p>I've successfully delivered 15+ projects across defense, fintech, enterprise, and startup sectors. My unique combination of security-focused development and rapid MVP delivery makes me the ideal partner for organizations that need both robust, secure systems and fast time-to-market.</p>
+                    </div>
                 </div>
                 
-                <div class="skills-grid fade-in delay-200">
-                    <div class="skill-category">
-                        <h4>Frontend Development</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">Next.js</span>
-                            <span class="skill-tag">Material UI</span>
-                            <span class="skill-tag">Tailwind CSS</span>
-                            <span class="skill-tag">Responsive Design</span>
+                <div class="about-stats fade-in delay-200">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>Defense Systems</h4>
+                            <p>5+ classified applications for military organizations</p>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
-                        <h4>Backend & Database</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Firebase</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MongoDB</span>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>Startup MVPs</h4>
+                            <p>8+ successful MVP deliveries for innovative startups</p>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
-                        <h4>Development & DevOps</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Testing</span>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h4>Enterprise Solutions</h4>
+                            <p>3+ enterprise applications for commercial organizations</p>
                         </div>
                     </div>
-                    
-                    <div class="skill-category">
-                        <h4>Specializations</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">MVP Development</span>
-                            <span class="skill-tag">Security Systems</span>
-                            <span class="skill-tag">AI Integration</span>
-                            <span class="skill-tag">Real-time Systems</span>
-                            <span class="skill-tag">API Design</span>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section" style="background-color: var(--bg-darker);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">Full-stack development with specialized focus areas</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-category fade-in delay-100">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">React</span>
+                        <span class="expertise-tag">TypeScript</span>
+                        <span class="expertise-tag">Next.js</span>
+                        <span class="expertise-tag">Material UI</span>
+                        <span class="expertise-tag">Tailwind CSS</span>
+                        <span class="expertise-tag">Responsive Design</span>
+                    </div>
+                </div>
+                
+                <div class="expertise-category fade-in delay-200">
+                    <h3 class="category-title">Backend & Database</h3>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Node.js</span>
+                        <span class="expertise-tag">Firebase</span>
+                        <span class="expertise-tag">Java</span>
+                        <span class="expertise-tag">Python</span>
+                        <span class="expertise-tag">PostgreSQL</span>
+                        <span class="expertise-tag">MongoDB</span>
+                    </div>
+                </div>
+                
+                <div class="expertise-category fade-in delay-300">
+                    <h3 class="category-title">Development & DevOps</h3>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Git</span>
+                        <span class="expertise-tag">Linux</span>
+                        <span class="expertise-tag">Docker</span>
+                        <span class="expertise-tag">CI/CD</span>
+                        <span class="expertise-tag">AWS</span>
+                        <span class="expertise-tag">Testing</span>
+                    </div>
+                </div>
+                
+                <div class="expertise-category fade-in delay-400">
+                    <h3 class="category-title">Specializations</h3>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Security Systems</span>
+                        <span class="expertise-tag">MVP Development</span>
+                        <span class="expertise-tag">AI Integration</span>
+                        <span class="expertise-tag">Real-time Systems</span>
+                        <span class="expertise-tag">API Design</span>
+                        <span class="expertise-tag">Decision Trees</span>
                     </div>
                 </div>
             </div>
@@ -126,262 +192,438 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section" style="background-color: var(--bg-darker);">
+    <section id="projects" class="section">
         <div class="container">
             <div class="section-header fade-in">
-                <h2 class="section-title">Projects</h2>
-                <p class="section-subtitle">From defense systems to startup MVPs</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Lightweight software solutions and innovative solutions</p>
             </div>
             
             <div class="projects-grid">
-                <!-- Military/Defense Projects -->
-                <div class="project-card fade-in delay-100 classified">
-                    <div class="project-image">
-                        <div class="classified-badge">
-                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                            <span>CLASSIFIED</span>
-                        </div>
-                        <img src="images/ranges/controlroom-live range state.jpg" alt="Classified Defense System" style="filter: blur(2px);">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Intelligent Range Management System</h3>
-                        <p class="project-description">Real-time shooting range scheduling and management system with digital twin integration for defense organizations.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Real-time</span>
-                        </div>
-                        <div class="project-status">
-                            <div class="status-icon status-classified"></div>
-                            <span>Operational - Classified</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in delay-200 classified">
-                    <div class="project-image">
-                        <div class="classified-badge">
-                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                            <span>CLASSIFIED</span>
-                        </div>
-                        <img src="images/hagnash_db/1.jpg" alt="Classified Personnel System" style="filter: blur(2px);">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Personnel Qualification System</h3>
-                        <p class="project-description">Comprehensive system for tracking training, certification, and operational readiness of defense personnel.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Security</span>
-                        </div>
-                        <div class="project-status">
-                            <div class="status-icon status-classified"></div>
-                            <span>Active - Classified</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Public/Commercial Projects -->
-                <a href="https://versionbravo.org" target="_blank" class="project-card fade-in delay-300" rel="noopener noreferrer">
-                    <div class="project-image">
-                        <img src="images/logo/Copy-of-VB_Horizontal_stacked_COLOR-bg-copy-6bdaab09-c80e7811-315w.png.webp" alt="Version Bravo Logo" style="object-fit: contain; background: white; padding: 2rem;">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Version Bravo Community Hub</h3>
-                        <p class="project-description">Comprehensive community platform with event management, resource sharing, and member networking capabilities.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Tailwind</span>
-                        </div>
-                        <div class="project-status">
-                            <div class="status-icon status-active"></div>
-                            <span>Live Production</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="project-card fade-in delay-400">
-                    <div class="project-image">
-                        <img src="images/catalog/product card.jpg" alt="AGAT&D Product Catalog">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Dynamic Product Catalog</h3>
-                        <p class="project-description">Advanced filtering system for product catalogs with Hebrew RTL support and real-time search capabilities.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">RTL Support</span>
-                        </div>
-                        <div class="project-status">
-                            <div class="status-icon status-active"></div>
-                            <span>Deployed</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Startup MVP Examples -->
-                <div class="project-card fade-in delay-500">
-                    <div class="project-image">
-                        <div class="mvp-badge">
-                            <i class="fas fa-rocket" aria-hidden="true"></i>
-                            <span>MVP</span>
-                        </div>
-                        <div class="placeholder-image">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Fintech Startup</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Financial Analytics Platform</h3>
-                        <p class="project-description">MVP for fintech startup featuring real-time data visualization, automated reporting, and investment tracking.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">D3.js</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                        <div class="project-status">
-                            <div class="status-icon status-mvp"></div>
-                            <span>MVP Delivered</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in delay-600">
-                    <div class="project-image">
-                        <div class="mvp-badge">
-                            <i class="fas fa-rocket" aria-hidden="true"></i>
-                            <span>MVP</span>
-                        </div>
-                        <div class="placeholder-image">
-                            <i class="fas fa-users"></i>
-                            <span>SaaS Platform</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Team Collaboration SaaS</h3>
-                        <p class="project-description">Rapid MVP development for team management platform with real-time collaboration, task tracking, and analytics.</p>
-                        <div class="project-tags">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">WebSocket</span>
-                        </div>
-                        <div class="project-status">
-                            <div class="status-icon status-mvp"></div>
-                            <span>MVP Success</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Companies Section -->
-    <section id="companies" class="section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Companies & Organizations</h2>
-                <p class="section-subtitle">Trusted by defense organizations, corporations, and startups</p>
-            </div>
-            
-            <div class="companies-grid">
-                <!-- Defense & Government -->
-                <div class="company-category fade-in delay-100">
-                    <h3 class="category-title">Defense & Government</h3>
-                    <div class="company-cards">
-                        <div class="company-card">
-                            <div class="company-logo">
-                                <img src="images/logo/IDF_Border_Defense_Force_Insignia.svg.png" alt="IDF HomeFront Defense">
+                <!-- Defense Systems -->
+                <div class="project-category fade-in delay-100">
+                    <h3 class="category-title">Defense & Military Systems</h3>
+                    <div class="projects-row">
+                        <div class="project-card classified">
+                            <div class="project-image">
+                                <div class="classified-badge">
+                                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                    <span>CLASSIFIED</span>
+                                </div>
+                                <img src="images/logo/idf-logo.jpg" alt="IDF Range Management System" style="object-fit: contain;">
                             </div>
-                            <div class="company-info">
-                                <h4>IDF HomeFront Defense</h4>
-                                <p>Range management systems</p>
+                            <div class="project-content">
+                                <h4 class="project-title">IDF Range Management System</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>Advanced range management system for military training facilities. Features real-time monitoring, digital twin integration, and comprehensive scheduling capabilities. Built with React and Firebase for high-performance, secure operations.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">Advanced range management system for military training facilities. Features real-time monitoring, digital twin integration, and comprehensive scheduling capabilities. Built with React and Firebase for high-performance, secure operations.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Real-time</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-classified"></div>
+                                    <span>Operational - Classified</span>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="company-card">
-                            <div class="company-logo">
-                                <img src="images/logo/PakmazLogo.svg.png" alt="IDF Central Command">
+
+                        <div class="project-card classified">
+                            <div class="project-image">
+                                <div class="classified-badge">
+                                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                    <span>CLASSIFIED</span>
+                                </div>
+                                <img src="images/logo/idf-logo.jpg" alt="IDF Knowledge Retention Platform" style="object-fit: contain;">
                             </div>
-                            <div class="company-info">
-                                <h4>IDF Central Command</h4>
-                                <p>Training facility systems</p>
+                            <div class="project-content">
+                                <h4 class="project-title">IDF Knowledge Retention Platform</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>Comprehensive knowledge management platform for military personnel training and certification. Features advanced qualification tracking, automated assessment systems, and secure data management for defense training operations.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">Comprehensive knowledge management platform for military personnel training and certification. Features advanced qualification tracking, automated assessment systems, and secure data management for defense training operations.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Security</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-classified"></div>
+                                    <span>Active - Classified</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card classified">
+                            <div class="project-image">
+                                <div class="classified-badge">
+                                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                    <span>CLASSIFIED</span>
+                                </div>
+                                <img src="images/logo/idf-logo.jpg" alt="IDF Scheduler Platform" style="object-fit: contain;">
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">IDF Scheduler Platform</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>AI-powered scheduling platform for military operations and training coordination. Features intelligent resource allocation, conflict resolution, and real-time coordination capabilities for complex military operations.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">AI-powered scheduling platform for military operations and training coordination. Features intelligent resource allocation, conflict resolution, and real-time coordination capabilities for complex military operations.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">AI</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-classified"></div>
+                                    <span>Active - Classified</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card classified">
+                            <div class="project-image">
+                                <div class="classified-badge">
+                                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                    <span>CLASSIFIED</span>
+                                </div>
+                                <img src="images/logo/skyhoop-logo.jpeg" alt="Skyhoop Landing Page" style="object-fit: contain;">
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Skyhoop Landing Page</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>High-converting landing page for innovative defense technology company. Features modern design, optimized user experience, and conversion-focused elements for defense sector client acquisition.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">High-converting landing page for innovative defense technology company. Features modern design, optimized user experience, and conversion-focused elements for defense sector client acquisition.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Landing Page</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-classified"></div>
+                                    <span>In Production - Classified</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Organizations & Communities -->
-                <div class="company-category fade-in delay-200">
-                    <h3 class="category-title">Organizations & Communities</h3>
-                    <div class="company-cards">
-                        <div class="company-card">
-                            <div class="company-logo">
-                                <img src="images/logo/Copy-of-VB_Horizontal_stacked_COLOR-bg-copy-6bdaab09-c80e7811-315w.png.webp" alt="Version Bravo">
+                <!-- Commercial Applications -->
+                <div class="project-category fade-in delay-200">
+                    <h3 class="category-title">Commercial & Enterprise Applications</h3>
+                    <div class="projects-row">
+                        <a href="https://versionbravo.netlify.app" class="project-card" target="_blank" rel="noopener noreferrer">
+                            <div class="project-image">
+                                <img src="images/logo/version-bravo-logo.png" alt="Version Bravo" style="object-fit: contain;">
+                                <div class="project-overlay">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </div>
                             </div>
-                            <div class="company-info">
-                                <h4>Version Bravo</h4>
-                                <p>Community platform & portal</p>
+                            <div class="project-content">
+                                <h4 class="project-title">Version Bravo Community Site</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>Comprehensive community platform serving as NGO website, accelerator hub, alumni network, and portfolio management system. Features Firebase OAuth, responsive design, and multi-functional capabilities for organizational growth and community engagement.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">Comprehensive community platform serving as NGO website, accelerator hub, alumni network, and portfolio management system. Features Firebase OAuth, responsive design, and multi-functional capabilities for organizational growth and community engagement.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Firebase OAuth</span>
+                                    <span class="tag">Responsive</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-active"></div>
+                                    <span>Live</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
+
+                        <a href="https://portal.versionbravo.com" class="project-card" target="_blank" rel="noopener noreferrer">
+                            <div class="project-image">
+                                <img src="images/logo/version-bravo-logo.png" alt="Version Bravo Application" style="object-fit: contain;">
+                                <div class="project-overlay">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Version Bravo Application Webapp</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>Evolved from Phase 1 application system into comprehensive CRM platform for operators and alumni management. Features full lifecycle management, custom CMS, user management, and operational workflow optimization for organizational efficiency.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">Evolved from Phase 1 application system into comprehensive CRM platform for operators and alumni management. Features full lifecycle management, custom CMS, user management, and operational workflow optimization for organizational efficiency.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">CRM System</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">User Management</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-active"></div>
+                                    <span>Live</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://agat-dcatalog.netlify.app" class="project-card" target="_blank" rel="noopener noreferrer">
+                            <div class="project-image">
+                                <img src="images/logo/agatd-logo.png" alt="AGAT&D Product Catalog" style="object-fit: contain;">
+                                <div class="project-overlay">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">AGAT&D Product Catalog</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>Innovative product catalog solution with Google Sheets API integration for seamless data management. Features Firebase OAuth authentication, RTL support, and zero-migration data upload capabilities for efficient product catalog management.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">Innovative product catalog solution with Google Sheets API integration for seamless data management. Features Firebase OAuth authentication, RTL support, and zero-migration data upload capabilities for efficient product catalog management.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">Google Sheets API</span>
+                                    <span class="tag">Firebase OAuth</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">RTL Support</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-active"></div>
+                                    <span>Deployed</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://peakperformancediving.netlify.app" class="project-card" target="_blank" rel="noopener noreferrer">
+                            <div class="project-image">
+                                <div class="text-logo-project">
+                                    <span>Peak Performance</span>
+                                </div>
+                                <div class="project-overlay">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Peak Performance Website</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>Comprehensive fitness and diving services platform with dynamic customer signup system. Features complete booking management, course registration, and member portal for Peak Performance's fitness and diving services.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">Comprehensive fitness and diving services platform with dynamic customer signup system. Features complete booking management, course registration, and member portal for Peak Performance's fitness and diving services.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Booking System</span>
+                                    <span class="tag">E-commerce</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-active"></div>
+                                    <span>Live</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://findafitt.com" class="project-card" target="_blank" rel="noopener noreferrer">
+                            <div class="project-image">
+                                <div class="mvp-badge">
+                                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                                    <span>MVP</span>
+                                </div>
+                                <img src="images/logo/findafitt-logo.png" alt="FindAFitt Career Compass" style="object-fit: contain; background: #1a1a1a;">
+                                <div class="project-overlay">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">FindAFitt Career Compass</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>Revolutionary AI-powered career matching platform for military veterans transitioning to civilian life. Features advanced decision tree algorithms, intelligent profiling, and personalized career recommendations to help veterans find their ideal career path.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">Revolutionary AI-powered career matching platform for military veterans transitioning to civilian life. Features advanced decision tree algorithms, intelligent profiling, and personalized career recommendations to help veterans find their ideal career path.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">AI/ML</span>
+                                    <span class="tag">Decision Trees</span>
+                                    <span class="tag">Veteran Services</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-mvp"></div>
+                                    <span>Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Commercial & Retail -->
-                <div class="company-category fade-in delay-300">
-                    <h3 class="category-title">Commercial & Retail</h3>
-                    <div class="company-cards">
-                        <div class="company-card">
-                            <div class="company-logo">
-                                <img src="images/logo/agatd.png" alt="AGAT&D">
+                <!-- Startup MVPs -->
+                <div class="project-category fade-in delay-300">
+                    <h3 class="category-title">Startup MVPs & Innovation</h3>
+                    <div class="projects-row">
+                        <a href="https://ground-works.netlify.app" class="project-card" target="_blank" rel="noopener noreferrer">
+                            <div class="project-image">
+                                <div class="mvp-badge">
+                                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                                    <span>MVP</span>
+                                </div>
+                                <img src="images/logo/gorund-works-logo.png" alt="Ground Works MVP" style="object-fit: contain;">
+                                <div class="project-overlay">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </div>
                             </div>
-                            <div class="company-info">
-                                <h4>AGAT&D</h4>
-                                <p>Product catalog system</p>
+                            <div class="project-content">
+                                <h4 class="project-title">Ground Works MVP</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>Cutting-edge startup MVP featuring modern design and essential functionality for rapid market validation. Built for investor presentations and early user testing with scalable architecture for future growth.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">Cutting-edge startup MVP featuring modern design and essential functionality for rapid market validation. Built for investor presentations and early user testing with scalable architecture for future growth.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">MVP</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-mvp"></div>
+                                    <span>MVP Delivered</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </a>
 
-                <!-- Startups & MVPs -->
-                <div class="company-category fade-in delay-400">
-                    <h3 class="category-title">Startups & MVPs</h3>
-                    <div class="company-cards">
-                        <div class="company-card mvp-card">
-                            <div class="company-logo">
-                                <i class="fas fa-chart-line"></i>
+                        <a href="https://rarexearth-investors.netlify.app" class="project-card" target="_blank" rel="noopener noreferrer">
+                            <div class="project-image">
+                                <div class="mvp-badge">
+                                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                                    <span>MVP</span>
+                                </div>
+                                <img src="images/logo/rarex-logo.png" alt="RareX Landing Page" style="object-fit: contain;">
+                                <div class="project-overlay">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </div>
                             </div>
-                            <div class="company-info">
-                                <h4>Fintech Startups</h4>
-                                <p>3+ MVP deliveries</p>
+                            <div class="project-content">
+                                <h4 class="project-title">RareX Landing Page</h4>
+                                <div class="project-description-mobile">
+                                    <div class="project-description-full" style="display: none;">
+                                        <p>High-converting landing page for innovative startup with modern design and optimized user experience. Features conversion-focused elements and rapid market entry capabilities for startup growth and investor engagement.</p>
+                                    </div>
+                                    <button class="project-read-more-btn" onclick="toggleProjectDescription(this)">
+                                        <span class="read-more-text">Read More</span>
+                                        <span class="read-less-text" style="display: none;">Read Less</span>
+                                        <i class="fas fa-chevron-down read-more-icon"></i>
+                                        <i class="fas fa-chevron-up read-less-icon" style="display: none;"></i>
+                                    </button>
+                                </div>
+                                <div class="project-description-desktop">
+                                    <p class="project-description">High-converting landing page for innovative startup with modern design and optimized user experience. Features conversion-focused elements and rapid market entry capabilities for startup growth and investor engagement.</p>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Tailwind</span>
+                                    <span class="tag">Landing Page</span>
+                                </div>
+                                <div class="project-status">
+                                    <div class="status-icon status-mvp"></div>
+                                    <span>Live</span>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="company-card mvp-card">
-                            <div class="company-logo">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="company-info">
-                                <h4>SaaS Platforms</h4>
-                                <p>5+ MVP projects</p>
-                            </div>
-                        </div>
-                        
-                        <div class="company-card mvp-card">
-                            <div class="company-logo">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <div class="company-info">
-                                <h4>Mobile Apps</h4>
-                                <p>2+ MVP launches</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -389,11 +631,11 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section" style="background-color: var(--bg-darker);">
+    <section id="contact" class="section">
         <div class="container">
             <div class="section-header fade-in">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to build your next project or MVP?</p>
+                <h2 class="section-title">Ready to Build Something Amazing?</h2>
+                <p class="section-subtitle">Let's discuss your next project or MVP</p>
             </div>
             
             <div class="contact-grid">
@@ -447,8 +689,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <div class="footer-logo">TS<span class="accent">.</span></div>
-                    <p class="footer-text">Full-stack developer specialized in defense-grade applications, startup MVPs, and secure systems. Building mission-critical software and helping startups launch successfully.</p>
+                    <div class="footer-logo">Tamir Sida</div>
+                    <p class="footer-text">Full-stack developer specialized in lightweight software solutions for defense organizations, startups, and enterprises. Building mission-critical software that drives operational excellence.</p>
                     <div class="social-links">
                         <a href="https://linkedin.com/in/tamir-sida-b118712a1" target="_blank" class="social-icon" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in" aria-hidden="true"></i>
@@ -464,7 +706,7 @@
                     <div class="footer-links">
                         <a href="#projects">Defense Systems</a>
                         <a href="#projects">Startup MVPs</a>
-                        <a href="#projects">Web Applications</a>
+                        <a href="#projects">Enterprise Solutions</a>
                         <a href="#projects">System Integration</a>
                     </div>
                 </div>
@@ -472,22 +714,21 @@
                 <div class="footer-nav">
                     <h4 class="footer-links-title">Industries</h4>
                     <div class="footer-links">
-                        <a href="#companies">Defense & Government</a>
-                        <a href="#companies">Fintech Startups</a>
-                        <a href="#companies">SaaS Platforms</a>
-                        <a href="#companies">E-commerce</a>
+                        <a href="#clients">Defense & Government</a>
+                        <a href="#clients">Fintech Startups</a>
+                        <a href="#clients">Enterprise</a>
+                        <a href="#clients">E-commerce</a>
                     </div>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 Tamir Sida. All rights reserved.</p>
+                <p>&copy; 2024 Tamir Sida. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/modern.js"></script>
 </body>
 </html> 
