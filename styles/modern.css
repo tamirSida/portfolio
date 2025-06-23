@@ -1718,6 +1718,10 @@ section {
     margin-top: 0.75rem;
     padding-top: 0.75rem;
   }
+  
+  .about-text-full p {
+    font-size: 0.85rem;
+  }
 }
 
 /* ===== Mobile Read More for Projects ===== */
@@ -1802,5 +1806,9 @@ section {
   
   .project-description-full {
     margin-top: 0.25rem;
+  }
+  
+  .project-description-full p {
+    font-size: 0.7rem;
   }
 } 

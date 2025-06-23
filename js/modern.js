@@ -242,7 +242,13 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   // Project cards read more/less functionality
-  window.toggleProjectDescription = function(button) {
+  window.toggleProjectDescription = function(button, event) {
+    // Prevent event bubbling to parent elements
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    
     const projectCard = button.closest('.project-card');
     const descriptionFull = projectCard.querySelector('.project-description-full');
     const readMoreText = button.querySelector('.read-more-text');
